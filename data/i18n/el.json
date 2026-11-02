@@ -1,6 +1,6 @@
 {
-  "app.title": "Lexima",
-  "app.window_title": "Lexima · Αναλυτής κειμένου",
+  "app.title": "Semantorium",
+  "app.window_title": "Semantorium · Αναλυτής κειμένου",
   "menu.file": "Αρχείο",
   "menu.analysis": "Ανάλυση",
   "menu.view": "Προβολή",
@@ -21,7 +21,7 @@
   "action.search": "Καθολική αναζήτηση…",
   "action.next_tab": "Επόμενη καρτέλα ομάδας",
   "action.previous_tab": "Προηγούμενη καρτέλα ομάδας",
-  "action.about": "Σχετικά με το Lexima",
+  "action.about": "Σχετικά με το Semantorium",
   "button.generate": "⚡  Δημιουργία αναφοράς",
   "button.settings": "⚙  Ρυθμίσεις",
   "button.search": "🔎  Αναζήτηση",

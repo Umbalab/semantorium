@@ -1,4 +1,4 @@
-/* Tema escuro do Lexima (aplicado sobre a base clara). */
+/* Tema escuro do Semantorium (aplicado sobre a base clara). */
 
 QMainWindow, QWidget {
     background:#161a20;

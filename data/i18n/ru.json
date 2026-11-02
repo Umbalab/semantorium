@@ -1,6 +1,6 @@
 {
-  "app.title": "Lexima",
-  "app.window_title": "Lexima · Анализатор текста",
+  "app.title": "Semantorium",
+  "app.window_title": "Semantorium · Анализатор текста",
   "menu.file": "Файл",
   "menu.analysis": "Анализ",
   "menu.view": "Вид",
@@ -21,7 +21,7 @@
   "action.search": "Глобальный поиск…",
   "action.next_tab": "Следующая вкладка группы",
   "action.previous_tab": "Предыдущая вкладка группы",
-  "action.about": "О Lexima",
+  "action.about": "О Semantorium",
   "button.generate": "⚡  Создать отчёт",
   "button.settings": "⚙  Настройки",
   "button.search": "🔎  Поиск",

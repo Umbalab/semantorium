@@ -10,7 +10,7 @@ A stoplist efetiva combina três camadas:
   2. palavras acrescentadas pelo usuário;
   3. palavras removidas da lista padrão pelo usuário.
 
-Tudo é persistido em ``%APPDATA%\\Lexima\\stoplist.json`` (ou no caminho
+Tudo é persistido em ``%APPDATA%\\Semantorium\\stoplist.json`` (ou no caminho
 indicado por ``LEXIMA_STOPLIST``). O diálogo permite adicionar, remover,
 restaurar o padrão, importar e exportar listas.
 """

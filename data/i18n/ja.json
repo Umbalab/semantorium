@@ -1,6 +1,6 @@
 {
-  "app.title": "Lexima",
-  "app.window_title": "Lexima · テキスト分析",
+  "app.title": "Semantorium",
+  "app.window_title": "Semantorium · テキスト分析",
   "menu.file": "ファイル",
   "menu.analysis": "分析",
   "menu.view": "表示",
@@ -21,7 +21,7 @@
   "action.search": "全体検索…",
   "action.next_tab": "グループ内の次のタブ",
   "action.previous_tab": "グループ内の前のタブ",
-  "action.about": "Lexima について",
+  "action.about": "Semantorium について",
   "button.generate": "⚡  レポートを生成",
   "button.settings": "⚙  設定",
   "button.search": "🔎  検索",

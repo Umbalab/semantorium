@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-Teste CLI headless do núcleo do Lexima.
+Teste CLI headless do núcleo do Semantorium.
 
 Uso:
     python -m tools.cli_analyze arquivo.txt
@@ -23,7 +23,7 @@ from core.extractor import extract_text  # noqa: E402
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Lexima - análise headless")
+    parser = argparse.ArgumentParser(description="Semantorium - análise headless")
     parser.add_argument("file", help="Arquivo a analisar")
     parser.add_argument("--lang", default="Auto-detectar")
     parser.add_argument("--json", dest="json_out", help="Salvar resultado em JSON")

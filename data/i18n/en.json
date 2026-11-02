@@ -1,6 +1,6 @@
 {
-  "app.title": "Lexima",
-  "app.window_title": "Lexima · Text Analyzer",
+  "app.title": "Semantorium",
+  "app.window_title": "Semantorium · Text Analyzer",
   "menu.file": "File",
   "menu.analysis": "Analysis",
   "menu.view": "View",
@@ -21,7 +21,7 @@
   "action.search": "Global search…",
   "action.next_tab": "Next tab in group",
   "action.previous_tab": "Previous tab in group",
-  "action.about": "About Lexima",
+  "action.about": "About Semantorium",
   "button.generate": "⚡  Generate report",
   "button.settings": "⚙  Settings",
   "button.search": "🔎  Search",

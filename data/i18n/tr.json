@@ -1,6 +1,6 @@
 {
-  "app.title": "Lexima",
-  "app.window_title": "Lexima · Metin çözümleyici",
+  "app.title": "Semantorium",
+  "app.window_title": "Semantorium · Metin çözümleyici",
   "menu.file": "Dosya",
   "menu.analysis": "Analiz",
   "menu.view": "Görünüm",
@@ -21,7 +21,7 @@
   "action.search": "Genel arama…",
   "action.next_tab": "Gruptaki sonraki sekme",
   "action.previous_tab": "Gruptaki önceki sekme",
-  "action.about": "Lexima hakkında",
+  "action.about": "Semantorium hakkında",
   "button.generate": "⚡  Rapor oluştur",
   "button.settings": "⚙  Ayarlar",
   "button.search": "🔎  Ara",
