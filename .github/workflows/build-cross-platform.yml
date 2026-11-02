@@ -1,0 +1,100 @@
+name: Build Semantorium (Linux + macOS)
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build-linux:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pyinstaller
+
+      - name: Build with PyInstaller
+        run: python -m PyInstaller Semantorium.spec --noconfirm
+
+      - name: Create portable archive
+        run: |
+          cd dist
+          tar -czf Semantorium-Linux-x86_64.tar.gz Semantorium
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Semantorium-Linux-x86_64
+          path: dist/Semantorium-Linux-x86_64.tar.gz
+
+  build-macos-x86_64:
+    runs-on: macos-13
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pyinstaller
+
+      - name: Build with PyInstaller
+        run: python -m PyInstaller Semantorium.spec --noconfirm
+
+      - name: Create portable archive
+        run: |
+          cd dist
+          ditto -c -k --sequesterRsrc --keepParent Semantorium Semantorium-macOS-x86_64.zip
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Semantorium-macOS-x86_64
+          path: dist/Semantorium-macOS-x86_64.zip
+
+  build-macos-arm64:
+    runs-on: macos-14
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pyinstaller
+
+      - name: Build with PyInstaller
+        run: python -m PyInstaller Semantorium.spec --noconfirm
+
+      - name: Create portable archive
+        run: |
+          cd dist
+          ditto -c -k --sequesterRsrc --keepParent Semantorium Semantorium-macOS-arm64.zip
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Semantorium-macOS-arm64
+          path: dist/Semantorium-macOS-arm64.zip
