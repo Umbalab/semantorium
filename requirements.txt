@@ -1,0 +1,22 @@
+# Dependências completas (runtime + ferramentas de build)
+# Instale com: pip install -r requirements.txt
+
+-r requirements-core.txt
+
+# Build do executável
+pyinstaller>=6.10.0
+
+# Testes
+pytest>=8.0.0
+pytest-qt>=4.4.0
+
+# ---------------------------------------------------------------------------
+# OPCIONAIS — não são necessários para o Semantorium funcionar.
+# Descomente apenas se quiser recursos extras; o pacote do .exe não os usa.
+# ---------------------------------------------------------------------------
+# Modelos spaCy (lematização/NER de alta qualidade; ~500 MB por idioma)
+# spacy>=3.7.5
+# Similaridade por embeddings (pesado: ~2 GB com torch)
+# sentence-transformers>=3.0.1
+# torch>=2.4.0
+# transformers>=4.44.2
