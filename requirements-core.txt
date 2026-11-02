@@ -1,0 +1,37 @@
+# Runtime dependencies (lean, required for the .exe)
+PySide6>=6.8.0
+
+# Extração de arquivos
+PyMuPDF>=1.24.10
+python-docx>=1.1.2
+odfpy>=1.4.1
+striprtf>=0.0.26
+charset-normalizer>=3.3.2
+
+# NLP / análise
+langdetect>=1.0.9
+yake>=0.4.8
+sumy>=0.11.0
+textstat>=0.7.4
+scikit-learn>=1.5.1
+numpy>=1.26.4
+
+# Grafos e visualização
+networkx>=3.3
+pyvis>=0.3.2
+matplotlib>=3.9.2
+wordcloud>=1.9.3
+Pillow>=10.4.0
+
+# Exportação
+reportlab>=4.2.2
+Jinja2>=3.1.4
+openpyxl>=3.1.5
+
+# OCR (opcional em runtime: app funciona sem, mas com OCR se instalado)
+rapidocr-onnxruntime>=1.2.0
+onnxruntime>=1.20.0
+shapely>=2.0
+
+# Observação: NÃO instale pymupdf-layout/pymupdf4llm. O PyMuPDF 2.0 passa a
+# usar modelos ONNX de layout no get_text() e isso quebra o pacote portátil.
